@@ -6,27 +6,9 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <p class="aligncenter">
-      <img src="images/ants.png" id="ants" alt="photo of man holding apple with ants" class="img" onclick="rotateImage();" height="300" width="300"/>
-    </p>
+      <div class="rotate">
+        <img src="images/ants.png" id="ants" alt="photo of man holding apple with ants" class="center" onclick="rotateImage();" height="700" width="500"/>
+      </div>
   </body>
-
-  <script>
-    var degrees = 0;
-      $('.img').click(function rotateMe(e) {
-
-        degrees += 90;
-
-        //$('.img').addClass('rotated'); // for one time rotation
-
-        $('.img').css({
-
-          'transform': 'rotate(' + degrees + 'deg)',
-          '-ms-transform': 'rotate(' + degrees + 'deg)',
-          '-moz-transform': 'rotate(' + degrees + 'deg)',
-          '-webkit-transform': 'rotate(' + degrees + 'deg)',
-          '-o-transform': 'rotate(' + degrees + 'deg)'
-        });
-  </script>
 
 </html>

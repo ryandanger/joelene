@@ -3,16 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>joelene</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <img src="images/ants.png" id="ants" alt="photo of man holding apple with ants" class="center" onclick="rotateImage();" />
+    <p class="aligncenter">
+      <img src="images/ants.png" id="ants" alt="photo of man holding apple with ants" class="img" onclick="rotateImage();" height="300" width="300"/>
+    </p>
   </body>
 
   <script>
-      function rotateImage() {
-          var img = document.getElementById('ants');
-          img.style.transform = 'rotate(42deg)';
-      }
+    var degrees = 0;
+      $('.img').click(function rotateMe(e) {
+
+        degrees += 90;
+
+        //$('.img').addClass('rotated'); // for one time rotation
+
+        $('.img').css({
+
+          'transform': 'rotate(' + degrees + 'deg)',
+          '-ms-transform': 'rotate(' + degrees + 'deg)',
+          '-moz-transform': 'rotate(' + degrees + 'deg)',
+          '-webkit-transform': 'rotate(' + degrees + 'deg)',
+          '-o-transform': 'rotate(' + degrees + 'deg)'
+        });
   </script>
 
 </html>

@@ -15,4 +15,10 @@
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
 }
-.aligncenter {text-align: center;}
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
